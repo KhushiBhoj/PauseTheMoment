@@ -1,24 +1,3 @@
-# [1] This is a blog written in mysql and nodejs express framework
-a simple blog using nodejs express and mysql
+Our Team consists of Palak Agarwal, Amrita Gupta, Bhavika Gupta, and Khushi Bhoj. Now that the tourism market is open in full flourish, we’ve all noticed through the years that a lot of Indians prefer a vacation abroad, whereas, on a contrary, a ton of foreigners want to visit and experience the scenic views of our country. Our project is an attempt to highlight the eye-capturing places in India and give Indian tourism a big boost.
 
-## Requirements :
-- Mysql database
-- Nodejs
-
-## Custom Versions ?
-- [expressjs-sqlite-blog](https://github.com/JustPowerful/expressjs-sqlite-blog)
-
-## How to use ?
-- First you need to change the sql database informations in `/config/database.json`
-
-![sql-info](https://www.mediafire.com/convkey/a4a9/qki7ar2a6lz0q9zzg.jpg)
-
-- Change the session secret in `/config/session.json`
-
-- Import the sql files from the `SQL` folder after creating a database
-
-![sql-files](http://www.mediafire.com/convkey/9c59/blt0vp9ipiexduczg.jpg)
-
-![sql-import](http://www.mediafire.com/convkey/56d9/01o11v80j8ftqbuzg.jpg)
-
-- Now you can launch the `app.js` using node
+Pause-the-moment, the title of this website is a reminder to all to take some time out from their rapid-busy schedule and enjoy a vacation, spend some time out, take a break and build a book worth of memory. The break that the tourism industry has had in the past two years, because of the pandemic and its recovery period, has made everyone eager to escape this chase. Thus, we think this project could be of major help to all at this present stage since this is a vacation period too.
