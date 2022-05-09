@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilgrimage Places</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <%- include('partials/navbar', {page:"places"}); -%>
+    <style>
+        .trending {
+            background: white;
+            margin-bottom: 25px;
+
+        }
+
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+            margin-bottom: 5px;
+        }
+
+        .warning:hover {
+            background: #ff9800;
+            color: white;
+        }
+
+        p {
+            color: gray;
+
+        }
+
+        .text {
+            padding-left: 1px;
+        }
+
+        img {
+            background-size: cover;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div style="background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    url('https://ik.imagekit.io/yuhlqqfjl/1567496275Webp.net-gifmaker.gif?tr=w-570,h-428');
+    
+    height: 400px;
+    background-size: cover;">
+        <div class="container" style="font-family: 'Water Brush', cursive;margin-bottom: 30px;
+                padding-top: 16%;
+                font-family: 'Water Brush', cursive;
+                font-size: 105px; color: white;">Pilgrimage Places</div>
+    </div>
+    <div>
+        <div class="container" style="margin-top: 100px;">
+
+            <div class="container">
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/Things-To-Do-In-Shirdi-16_dec.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Shirdi</h3>
+                                            <p class="content">The holy town of Shirdi situated in Maharashtra, a little distance from Mumbai, is synonymous with
+                                                Sai Baba – the saint who was revered by followers of all religions and
+                                                who is said to have performed several miracles in his life time.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://static.toiimg.com/thumb/msid-46916653,width=1200,height=900/46916653.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Rameswaram</h3>
+                                            <p class="content">The Ramanathaswamy temple in Rameswaram is one of the 12
+                                                Jyotirlinga shrines of Lord Shiva.It is also a part of the Char Dham
+                                                circuit. Mahashivratri and Navratri are popular festivals here.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://seoimgak.mmtcdn.com/blog/sites/default/files/images/iStock-516984446.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Varanasi</h3>
+                                            <p class="content">The ancient city of Varanasi is considered one of the
+                                                most
+                                                holy cities and there are several temples located on the banks of the
+                                                Ganga river. The Kashi Vishwanath Temple and Sankat Mochan Temple are
+                                                two of the most visited in the city.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.delhimetrotimes.in/photos/2021/03/temples-in-gujarat.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Dwaraka</h3>
+                                            <p class="content">Known as the birthplace of Lord Krishna, Mathura and
+                                                nearby Vrindavan are home to hundreds of temples dedicated to the
+                                                playful, dark-skinned god. Keshav Dev Temple and Banke Bihari Temple are
+                                                amongst the important shrines here.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://seoimgak.mmtcdn.com/blog/sites/default/files/images/iStock-93174417.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Amritsar</h3>
+                                            <p class="content">A shimmering golden façade reflected in the water, soothing intonations of the Granth Sahib being read out,a trip to the Golden Temple of Amritsar is a must-do.Guru Nanak Jayanti and Baisakhi are some of the festivals that are celebrated with great fervour here.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.cleartrip.com/collections/wp-content/uploads/2018/12/sarnath-495x330.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Sarnath</h3>
+                                            <p class="content">This is the place where Lord Buddha gave his first sermon after enlightenment.It is also the birthplace of one of the great Jain religious leader, and there is also a temple here to commemorate him.Sarnath is also a popular pilgrimage place for followers of Jainism.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.cleartrip.com/collections/wp-content/uploads/2018/12/tirumala-venkateswara-temple-495x330.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Tirupati</h3>
+                                            <p class="content">Famous amongst pilgrims for the Tirumala Venkateswara Temple. Situated in the state of Andhra Pradesh, the temple is well-known for its architecture.It is equally important for the pilgrims visiting here to get the ‘Laddoo Prasadam’.</p>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.cleartrip.com/collections/wp-content/uploads/2018/12/dargah-of-khwaja-moinuddin-chishti-440x330.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Ajmer</h3>
+                                            <p class="content">Famous dargah of Ajmer Sharif. It is the Dargah of Khwaja Moinuddin Chishti, and it is believed that wishes of the devotees get fulfilled here. The place is visited by millions of people every year from all over the globe, irrespective of their faith.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.cleartrip.com/collections/wp-content/uploads/2018/12/mathura-1-494x330.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Mathura</h3>
+                                            <p class="content">Located in Uttar Pradesh, Mathura is the birthplace of Lord Krishna. It has many temples including the Krishna Janmbhoomi Temple. This city becomes crowded with devotees and tourists during the festival of Janamashtami, which is the celebration of the birthday of Lord Krishna.</p>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.cleartrip.com/collections/wp-content/uploads/2018/12/meenakshi-amman-temple-493x330.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Madurai</h3>
+                                            <p class="content">Temple town in the state of Tamil Nadu. It holds great religious importance as it is believed that drops of honey fell from the hair of Lord Shiva who had come in the dreams of the king of Madurai and hence the city has got its name.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.cleartrip.com/collections/wp-content/uploads/2018/12/mahabodhi-temple-495x330.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Bodhgya</h3>
+                                            <p class="content">Place where Lord Buddha is believed to have gained enlightenment. It is situated in Bihar and is visited by pilgrims to meditate and pray. There are several temples here including the famous Mahabodhi temple, which is frequently visited by pilgrims from all over the world.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.cleartrip.com/collections/wp-content/uploads/2018/12/badrinath-temple-495x330.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Badrinath</h3>
+                                            <p class="content">Part of the Chaar Dhaam pilgrimage, which most Hindus believe they should do in a lifetime to gain salvation. The Chaar Dhaam pilgrimage involves visiting Badrinath, Rameshwaram, Dwarka and Puri. Badrinath is located in Uttarakhand and is considered the most important of the 4 dhaams.</p>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

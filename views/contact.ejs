@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in touch</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .upper-banner {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://www.passporthealthglobal.com/wp-content/uploads/2020/06/vaccines-advice-india-img-compressed.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .upper-banner p {
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        #contactus button {
+            width: 125px;
+            height: 50px;
+            border: none;
+            background-color: #87CEEB;
+            border-radius: 6px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/navbar', {page:"contact"}); -%>
+        <div class="upper-banner">
+            <h1>Spill The Beans <i class="fa fa-paper-plane-o"></i></h1>
+            <p>Good or Bad, Harsh or Polite, We are a bunch of patient people who would love to hear from you!</p>
+        </div>
+        <!---------------------------------------------contact us----------------------------------------------->
+        <section class="overlay" id="contactus" style="padding-top: 2%;">
+            <div class="contact-bg">
+                <div class="container">
+                    <form style="align-self: center;" data-aos="fade-up" action="/contact" method="post">
+                        <h1>
+                            <center>Get in Touch</center>
+                        </h1>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="mb-2">
+                                    <label for="exampleInputName" class="form-label"
+                                        style="color: rgb(8, 8, 8)">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="mb-2">
+                                    <label for="exampleInputEmail" class="form-label"
+                                        style="color: rgb(8, 8, 8)">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-4">
+                                <label for="exampleInputFeedback" class="form-label"
+                                    style="color: rgb(8, 8, 8);">Feedback</label>
+                                <textarea type="text" class="form-control" name="feedback" id="feedback" rows="5"
+                                    cols="170" required></textarea>
+                            </div>
+                        </div>
+                        <center>
+                            <button type="submit" class="frmsub" name="submit">Submit</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------end of contact us----------------------------------------------->
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script>
+    function validateForm() {
+        let name = document.getElementById('InputName').value;
+        let email = document.getElementById('InputEmail').value;
+        let feedback = document.getElementById('feedback').value;
+        console.log(email, name, feedback)
+        if (name == "") {
+            alert("Name must be filled out.");
+            return false;
+        } else if (email == "") {
+            alert("Email must be filled out.");
+            return false;
+        } else if (feedback == "") {
+            alert("Feedback must be filled out.");
+            return false;
+        } else if (/\d/.test(name)) {
+            alert("Name invalid.");
+            return false;
+        } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+            alert("Email Address invalid.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</html>

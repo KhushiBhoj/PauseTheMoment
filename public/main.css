@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  monospace;
+}
+/*=======Navbar===*/
+.bg{
+    background: #077cb3;
+}
+.main-navbar-light{
+    background:transparent!important;
+    position: absolute;
+    left:0;
+    right:0;
+    z-index:3;
+    top:10px;
+}
+/*====End of Navabr==*/
+/*====main Section===*/
+.main{
+    width:100%;
+    height:850px;
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index:0;
+}
+.main .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    content:"";
+    opacity: .5;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73));
+    height: 850px;
+}
+.main .main-text{
+    height:800px!important;
+
+}
+.main-text h1{
+    font-size:60px;
+    color:#fff;
+    line-height:1.1;
+    font-weight: bold;
+    
+}
+.main-text p{
+    line-height: 1.5;
+   color:#fff;
+}
+.btn-hero{
+    background-color: #030157!important;
+    color:#fff!important;
+    margin-right:5px;
+    margin-left:5px;
+    animation:skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding:5px 17px;
+}
+
+/*====End of main Section===*/
+
+  
+  
+ 
+/*====Welcome Section====*/
+.heading-section h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.img-wrap .effect{
+    position: relative;
+    margin-bottom: 0;
+    display: block;
+}
+.img-wrap .effect:after{
+    z-index:-1;
+    content:"";
+    position: absolute;
+    top:10px;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    background: #011525;
+    transition: .3s all ease-in-out;
+}
+.img-wrap:hover .effect:after{
+    right:-10px;
+    bottom:-10px;
+    position: absolute;
+}
+.btn-about{
+    background-color: #030157!important;
+    color:#fff!important;
+    margin-right:5px;
+    margin-left:5px;
+    animation:skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding:5px 17px;
+}
+
+/*==========Popular Places===========*/
+/*----Popular Places---*/
+.popular {
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 340px;
+  }
+  .popular:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:linear-gradient(rgba(26, 144, 255, 0.5),rgba(236, 5, 236, 0.4)),
+    url(./images/hero-2.jpg)center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .all-image {
+    padding-bottom: 75px;
+    position: relative;
+    margin-top: -295px;
+  }
+  .all-image .single-img {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .all-image .single-img .img-thumb {
+    height: 410px;
+  }
+  .all-image .single-img .img-thumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .all-image .single-img .img-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(2, 58, 110, 0.6);
+    transform: translateX(-50%);
+    transition: 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .all-image .single-img .img-hover .title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .all-image .single-img .img-hover h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .all-image .single-img:hover .img-hover {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+/*==========End of Popular Places===========*/
+/*========== can visit===========*/
+.services .icon-circle{
+    text-align: center;
+    padding: 40px 20px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 2px 4px rgba(19,19,19,0.5);
+}
+.services .icon-circle.purple{
+    background-image: url(food1.jpg);
+    color:#fff;
+}
+.services .icon-circle.pink{
+    background-image: url(beach2.jpg);
+    color:#fff;
+}
+.services .icon-circle.yellow{
+    background-image: url(mountain1.jpeg);
+    color:#fff;
+}
+.services .icon-circle.blue{
+    background-image: url(baloon1.jpg);
+    color:#fff;
+
+}
+.services .icon-circle .icon{
+    
+    margin:0 auto;
+    width: 64px;
+    height:64px;
+    border-radius: 50px;
+    border:1px solid #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+.services .icon-circle .icon i{
+    font-size: 28px;
+}
+.services .icon-circle h4{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.services .icon-circle p{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.services .icon-circle:hover{
+    border-color: #025277;
+    box-shadow: 0px 0 25px 0 rgba(3,75,122,0.1);
+}
+.services .icon-circle:hover .icon{
+    color:#fff;
+    background: #004299;
+}
+.services .icon-circle.purple .bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.services .icon-circle.pink .bg1{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+}
+.services .icon-circle.yellow .bg2{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+}
+.services .icon-circle.blue .bg3{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+}
+/*==========End of you can visit===========*/
+/*.......TEAMS......*/
+.team .member{
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    
+}
+
+.team .member .member-info h4{
+    font-weight: bold;
+    margin-bottom:5px;
+    font-size: 18px;
+    color:#000;
+    
+}
+
+

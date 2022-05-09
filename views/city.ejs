@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <%- include('partials/navbar', {page:"places"}); -%>
+
+    <style>
+        
+        .trending {
+            background: white;
+            margin-bottom: 25px;
+
+        }
+
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+            margin-bottom: 5px;
+        }
+
+        .warning:hover {
+            background: #ff9800;
+            color: white;
+        }
+
+        p {
+            color: gray;
+
+        }
+
+        .text {
+            padding-left: 1px;
+        }
+
+        img {
+            background-size: cover;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div style="background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    url('https://i.pinimg.com/originals/c4/ac/0c/c4ac0cbce4d29924b3609029acf17fed.gif');
+    
+    height: 400px;
+    background-size: cover;">
+                <div class="container" style="font-family: 'Water Brush', cursive;margin-bottom: 30px;
+                padding-top: 16%;
+                font-family: 'Water Brush', cursive;
+                font-size: 105px; color: white;">Cities</div>
+                </div>
+    <div>
+        <div class="container" style="margin-top: 100px;">
+
+            <div class="container">
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://indiatourism.world/wp-content/uploads/kerala-india-gods-own-country-kerala-tourism-best-places-to-visit-1110067826-1526629916366-1568x882.jpg">
+                                    </div>
+                                    <div class="col-md-5 text" >
+                                        <div class="container">
+                                            <h3>Kerala</h3>
+                                            <p class="content">Enjoy equable climate, beautiful and serene beaches,
+                                                peaceful
+                                                stretch of
+                                                backwaters and canals, exotic wildlife and lush green hill stations</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/mumbai/mumbai-chhatrapati-shivaji-maharaj-terminus-10.jpg/jcr:content/renditions/cq5dam.web.1024.576.jpeg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Mumbai</h3>
+                                            <p class="content">Mumbai is home to three UNESCO World Heritage Sites: the Elephanta Caves, CST, and the city's distinctive ensemble of Victorian </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/delhi/delhi-india-gate-0.jpg/jcr:content/renditions/cq5dam.web.1024.576.jpeg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Delhi</h3>
+                                            <p class="content">Delhi is of great historical significance as an important commercial, transport, and cultural hub, as well as the political centre of India.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.incredibleindia.org/content/dam/incredible-india-v2/images/states/goa/goaand.jpg/jcr:content/renditions/cq5dam.web.1800.737.jpeg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Goa</h3>
+                                            <p class="content">Goa is famous for its beaches and places of worship.It has a laid-back lifestyle, hippie vibe, glorious scenic beaches, natural tranquillity, beach sports, and awesome parties.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/hyderabad/hyderabad-charminar-0.jpg/jcr:content/renditions/cq5dam.web.1024.576.jpeg">
+                                    </div>
+                                    <div class="col-md-5 text" >
+                                        <div class="container">
+                                            <h3>Hyderabad</h3>
+                                            <p class="content">Hyderabad is known as The City of Pearls, as once it was the only global centre for trade of large diamonds, emeralds and natural pearls. </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/bengaluru/bengaluru-bangalore-palace-0.jpg/jcr:content/renditions/cq5dam.web.1800.600.jpeg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Bengaluru</h3>
+                                            <p class="content">Widely regarded as the "Silicon Valley of India" (or "IT capital of India") because of its role as the nation's leading information technology (IT) exporter</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://indiatourism.world/wp-content/uploads/jaipur-best-destination-to-visit-in-rajasthan.jpg">
+                                    </div>
+                                    <div class="col-md-5 text" >
+                                        <div class="container">
+                                            <h3>Jaipur</h3>
+                                            <p class="content">Popularly known as the Pink City of India, is the largest city in the state of Rajasthan. It is also the capital of Rajasthan. Known for Hawa Mahal, Jal Mahal, Amer Fort, Jantar Mantar</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://indiatourism.world/wp-content/uploads/udaipur-tourist-destination-to-visit-in-rajasthan.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Udaipur</h3>
+                                            <p class="content">Popularly known as the "City of Lakes".Udaipur is a tourist destination and is known for its history, culture, scenic locations and the Rajput-era palaces</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://indiatourism.world/wp-content/uploads/chennai-popular-destination-to-visit-in-tamilnadu-india.jpg">
+                                    </div>
+                                    <div class="col-md-5 text" >
+                                        <div class="container">
+                                            <h3>Chennai</h3>
+                                            <p class="content">Chennai exhibits a perfect amalgamation of art, architecture, dance, music and drama. Famous as the biggest cultural and economic centre down south</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/lucknow/lucknow-rumi-darwaza-0.jpg/jcr:content/renditions/cq5dam.web.1024.576.jpeg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Lucknow</h3>
+                                            <p class="content">The city was famous for its Adab and Tehzeeb (manners and hospitality), intricate embroidery, beautiful gardens and dance forms such as Kathak.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/kolkata/kolkata-writers-building-105.jpg/jcr:content/renditions/cq5dam.web.1024.576.jpeg">
+                                    </div>
+                                    <div class="col-md-5 text" >
+                                        <div class="container">
+                                            <h3>Kolkata</h3>
+                                            <p class="content">Kolkata is a city of colonial architecture, museums, art galleries, traditional food, temples, music and theatre. It is famous for its theatre and films.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://indiatourism.world/wp-content/uploads/mysore-best-destination-to-visit-in-karnataka.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Mysore</h3>
+                                            <p class="content">Mysore is noted for its heritage structures and palaces, including the Mysore Palace, and for the festivities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

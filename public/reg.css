@@ -1,0 +1,91 @@
+body {
+    font-family: poppins;
+    font-size: 16px;
+    color: #fff;
+}
+.form-box {
+    background-color: rgba(0, 0, 0, 0.8);   /* Black background with 0.5 opacity */
+    margin-left: 36%;
+    margin-top: 7%;
+    /*margin: auto;*/
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+    width: 21%;
+    height: 10%;
+    
+}
+.form-box .header-text {
+    font-size: 49px;
+    font-weight: bold;	
+    padding-bottom: 7px;
+    text-align: center;  /*Blackadder ITC (can also be tried but change font side accordingly)*/
+    font-style: italic;
+}
+.form-box input {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+.form-box label {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: text;
+}
+
+.form-box button {
+    background-color: rgba(0, 174, 255, 0.583);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0px;
+    
+}
+.img1{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.img2{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    left: 50%;
+    top: 0;
+}
+.img3{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    left: 0;
+    top: 50%;
+}
+.img4{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+span.frgt {
+    float: right;
+    padding-top: 16px;
+    color: rgb(221, 221, 221);
+
+}

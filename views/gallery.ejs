@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Take a Look</title>
+    <style>
+        .r1 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .cln1 {
+            flex: 25%;
+            max-width: 24%;
+            padding: 0 4px;
+            justify-content: center;
+        }
+
+        .cln1 img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 75px;
+            font-family: 'Water Brush', cursive;
+            text-align: left;
+            margin: 20px 10px;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .cln1 {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .cln1 {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/navbar', {page:"gallary"}); -%>
+    <section class="gallery-sec">
+        <h1>Photo Gallery - Take a Look</h1>
+        <div class="row r1">
+            <div class="column cln1">
+                <img src="https://www.worldatlas.com/r/w1200/upload/5f/07/d1/shutterstock-1052929439.jpg">
+                <img
+                    src="https://www.india-briefing.com/news/wp-content/uploads/2019/01/India-Briefing-India-Tops-List-of-Fastest-Growing-Cities-in-the-World.jpg">
+                <img
+                    src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-800131,resizemode-1,msid-72465860/news/politics-and-nation/view-making-bengaluru-asias-innovation-capital.jpg">
+                <img src="https://mittalbuilders.com/wp-content/uploads/2020/12/Reasons-to-settle-down-in-Pune.png">
+            </div>
+            <div class="column cln1">
+                <img src="http://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/12/shutterstock_7024083491.jpg">
+                <img
+                    src="https://i.guim.co.uk/img/media/6a8bfb23802c3b02bc5cb11bfed0e81b26e4a460/0_182_4000_2401/master/4000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=6748b180ffd508100e1008adee028d33">
+                <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/eb/b8/4d/lake-view.jpg?w=400&h=300&s=1">
+                <img src="https://cdn.siasat.com/wp-content/uploads/2022/01/New-Project-6-1.jpg">
+            </div>
+            <div class="column cln1">
+                <img src="https://im.whatshot.in/img/2021/Nov/cover-kolkata-1637574599.jpg?w=900&h=1200&cc=1">
+                <img
+                    src="https://static.tnn.in/thumb/msid-89892407,imgsize-100,width-1280,height-720,resizemode-75/89892407.jpg">
+                <img
+                    src="https://img.atlasobscura.com/fWpxlIBdtzFqDuUBmc9AhQzcGh7zAue4n_Xyq0tiGHw/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wMDQ0/MzUyMTQzZmRkY2Q5/NmY0ZTg2MjQwOTVm/MTYzMTJmZjVlZGRk/LmpwZw.jpg">
+            </div>
+            <div class="column cln1">
+                <img
+                    src="https://lh3.googleusercontent.com/FqXvailyyIAehQ2Imh_8G1lU8hc-Yy-EQ8iZtNocgLaYD_cmVreNAttCWuxwu8Nm">
+                <img
+                    src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/S526.jpg">
+                <img src="https://i.pinimg.com/736x/1c/2c/70/1c2c70719b3726b9ebd2e10827c0bd65.jpg">
+            </div>
+        </div>
+    </section>
+
+
+
+    
+</body>
+
+</html>

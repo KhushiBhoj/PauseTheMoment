@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  monospace;
+}
+/*=======Navbar===*/
+.bg{
+    background: #077cb3;
+}
+.main-navbar-light{
+    background:transparent!important;
+    position:absolute;
+    left:0;
+    right:0;
+    z-index:3;
+    top:10px;
+}
+/*====End of Navabr==*/
+/*====main Section===*/
+.main{
+    width:100%;
+    height: 550px;
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index:0;
+}
+.main .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:30%;
+    content:"";
+    opacity: 0.05;
+    background:whitesmoke;
+    height: 850px;
+}
+.main .main-text{
+    height:800px!important;
+
+}
+.main-text h1{
+    font-size:60px;
+    color:white;
+    line-height:1.1;
+    font-weight: bold;
+    padding:inherit;
+    
+}
+.main-text p{
+    line-height: 1.5;
+   color:white;
+   margin-top: 0pc;
+}
+.btn-hero{
+    background-color:teal!important;
+    color:#fff!important;
+    margin-right:5px;
+    margin-left:5px;
+    animation:skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding:5px 17px;
+}
+
+.blog-section{
+    padding-bottom:50px;
+    border-style: ridge;
+}
+.single-blog{
+    margin-bottom: 42px;
+}
+.single-blog img{
+    min-width: 100%;
+    margin-bottom: 30px;
+}
+.single-blog .blog-detail{
+    margin-bottom: 10px;
+}
+.single-blog .blog-detail .blog-detail{
+    font-size:16px;
+    color:#030942;
+    display: inline-block;
+    margin-right: 8px;
+}
+.single-blog .blog-detail .tag{
+    font-size:16px;
+    color:#030942;
+}
+.single-blog h4 a{
+    color: #030942;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.contact .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.contact .row .contact-info .box{
+  margin:4rem 2rem;
+  
+}
+
+.contact .row .contact-info .box h3{
+  font-size: 2rem;
+  color:#333;
+}
+
+.contact .row .contact-info .box h3 i{
+  color:#0098a1;
+}
+
+.contact .row .contact-info .box p{
+  padding-left: 3rem;
+  font-size: 1.7rem;
+  color:#aaa;
+}
+
+.contact .row .contact-form-container{
+  width:50%;
+  box-sizing: border-box;
+}
+
+.contact .row .contact-form-container h3{
+  font-size: 4rem;
+  padding-top: 4rem;
+  color:black;
+  font-style: oblique;
+} 
+
+.contact .row .contact-form-container .inputBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .row .contact-form-container .inputBox input{
+  width: 49%;
+}
+
+.contact .row .contact-form-container form input, textarea{
+  outline: none;
+  border:.2rem;
+  height:4rem;
+  background:#fff;
+  padding:0 1rem;
+  margin:1rem 0;
+  font-size: 1.8rem;
+  border-width:5px;  
+  border-style:outset;
+}
+
+.contact .row .contact-form-container form textarea{
+  width:100%;
+  padding:1rem;
+  resize: none;
+  height:20%;
+}
+
+.contact .row .contact-form-container form input[type="submit"]{
+  color:Black;
+  border:.2rem ;
+  cursor: pointer;
+  transition: .2s;
+  width:20rem;
+  border-width:5px;  
+  border-style:outset;
+}
+
+.contact .row .contact-form-container form input[type="submit"]:hover{
+  color:#fff;
+  background:black;
+}
+.contact .gif_image{
+  width: 100%;
+  height: 30%;
+  background-size: cover;
+  background-image: url("blog.jpg");
+  background-repeat: no-repeat;
+  
+}

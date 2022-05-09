@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasons to Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <!-------google fonts-------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .cult {
+            height: 70vh;
+            margin-bottom: 23px;
+        }
+
+        .ov {
+            position: relative;
+            height: 100%;
+            margin-bottom: 23px;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: rgb(0, 0, 0, 0.5);
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+
+        .ov:hover .overlay {
+            width: 100%;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/navbar', {page:"reasons"}); -%>
+    <section style="padding-bottom: 60px;">
+        <div class="container">
+            <div class="container" style="font-family: 'Water Brush', cursive;margin-bottom: 30px;
+            margin-top: 50px;
+            font-family: 'Water Brush', cursive;
+            font-size: 60px;">We give you reasons to Travel, what's your execuse</div>
+            <div class="row">
+                <div class="col-sm-12 cult">
+                    <div class="ov">
+                        <img src="https://images.unsplash.com/photo-1547366868-f5d6fab0440f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwZmVzdGl2YWx8ZW58MHx8MHx8&w=1000&q=80"
+                            alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"><b>Be a part of Local Celebrations</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="ov">
+                        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Cover-for-Shiva-Temples-in-India.jpg"
+                            alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"><b>Visit the Ancient temples</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="ov">
+                        <img src="https://i.redd.it/u6dt9mjz5fd01.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"><b>Explore the Wetlands</b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="ov">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjPmuzrucMnbIqGVy14cA7k1H-ufVyPKGt7Lybp2eNUajwZ0T7xT4788ykqvstWrXkn0&usqp=CAU"
+                            alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text"><b>Visit Heven on Earth 'Kashmir'</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

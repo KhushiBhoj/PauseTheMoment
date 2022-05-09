@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <%- include('partials/navbar', {page:"places"}); -%>
+
+    <style>
+        .trending {
+            background: white;
+            margin-bottom: 25px;
+
+        }
+
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+            margin-bottom: 5px;
+        }
+
+        .warning:hover {
+            background: #ff9800;
+            color: white;
+        }
+
+        p {
+            color: gray;
+
+        }
+
+        .text {
+            padding-left: 1px;
+        }
+
+        img {
+            background-size: cover;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div style="background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    url('https://thumbs.gfycat.com/UnrealisticUglyBluebird-max-1mb.gif');
+    
+    height: 400px;
+    background-size: cover;">
+        <div class="container" style="font-family: 'Water Brush', cursive;margin-bottom: 30px;
+                padding-top: 16%;
+                font-family: 'Water Brush', cursive;
+                font-size: 105px; color: white;">History of India</div>
+    </div>
+    <div>
+        <div class="container" style="margin-top: 100px;">
+
+            <div class="container">
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://i.natgeofe.com/n/8eba070d-14e5-4d07-8bab-9db774029063/93080_16x9.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Taj Mahal</h3>
+                                            <p class="content">The Taj Mahal is one of the seven wonders of the world
+                                                and is considered to be the most popular tourist attraction in the
+                                                country in addition to being one of the most important historical
+                                                monuments in India. A symbol of love, the Taj was built by Mughal
+                                                Emperor Shah Jahan for his queen Mumtaz. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://static.toiimg.com/thumb/51010213/Mysore-Palace.jpg?width=1200&height=900">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Mysore Palace</h3>
+                                            <p class="content">The former residence of the royal family of Mysore, the
+                                                Mysore Palace is one of the extremely breath-taking example of the
+                                                Indo-Sarcenic
+                                                style of creation and architecture. It was built in the year 1912 for
+                                                the 24th Ruler
+                                                of the Wodeyar Dynasty, and is till date one of the biggest palaces in
+                                                the country of India.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/01/38/a7.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Ajanta Ellora</h3>
+                                            <p class="content">Ajanta Ellora caves are among the major attractions
+                                                in the state of Maharashtra. They are considered to be
+                                                one of the most important monuments of India owing to the magnificent
+                                                paintings of Ajanta and well-carved sculptures of Ellora. It is an
+                                                inspiration for all the artists</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.andbeyond.com/wp-content/uploads/sites/5/north-india-jodhpur.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Mehrangarh Fort</h3>
+                                            <p class="content">Located in Jodhpur, Mehrangarh Fort is one of the largest
+                                                forts in the country. It is located at the top of a 410 feet elevated
+                                                hill and guarded by huge walls. The fort encloses a museum
+                                                exhibits various belongings of the royals. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.redgostories.com/uploads/images/2020/12/image_750x_5fe94dd76e883.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Khajuraho</h3>
+                                            <p class="content">Khajuraho is known around the world for its stunning
+                                                temples adorned by erotic and sensuous carvings. Khajuraho is a
+                                                brilliant example of Indian architecture and its culture back in the
+                                                medieval period. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48Rvn6Gb0vXvJaVEMpIlaFrfo--feA7-r5Lx-6c9Bv9EXNPt9NjPgbHn_-ZuklbPP2Lw&usqp=CAU">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Humayun Tomb</h3>
+                                            <p class="content">Apart from being known for its stunning architecture,
+                                                this is the first garden-tomb on the Indian subcontinent. It is a UNESCO
+                                                World Heritage Site declared in 1993, and has undergone widespread
+                                                restoration work since then.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.hyderabadtourism.travel/images/visiting-places/headers/golconda-fort-hyderabad-tourism-entryfee-timings-package-tour.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Golconda Fort</h3>
+                                            <p class="content">Golconda Fort is a massive fortress whose ruins stand
+                                                proudly even today displaying the glory of its rich past and some untold
+                                                sagas of the city's history. The place oozes out charm and is a
+                                                must-visit.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2e9mRGme9pL3msgBkuKUx7kIUl8FRFvMd8w&usqp=CAU">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Amber Fort</h3>
+                                            <p class="content">Amber Fort, situated 11 kms from Jaipur, is a fort built
+                                                with great artistic taste. Cradled on the top of a hill forming a
+                                                beautiful reflection in Maotha Lake, it is popularly known as Amer Fort.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.outlookindia.com/outlooktraveller//public/uploads/filemanager/images/shutterstock_84457321.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Fatehpur
+                                                Sikri</h3>
+                                            <p class="content">A city, predominantly made of red sandstone, Fatehpur
+                                                Sikri was once the capital of Mughal Emperor Akbar. It is now a UNESCO
+                                                world heritage site and a famous tourist attraction. The city offers a
+                                                fine example of Akbar's architectural finesse.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Agra-Fort_600.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Agra Fort</h3>
+                                            <p class="content">Also known as Lal Qila or Red Fort of Agra,
+                                                the Agra Fort is a UNESCO world heritage site. It is situated at a
+                                                distance of about 2.5km northwest of Taj Mahal. The
+                                                construction of the massive fort of red sandstone by the banks of Yamuna
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://assets-news.housing.com/news/wp-content/uploads/2021/04/22165934/Chittorgarh-Fort-India%E2%80%99s-largest-fort-spans-nearly-700-acres-FB-1200x700-compressed.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Chittorgarh</h3>
+                                            <p class="content">A depository of ancient monuments, an extremely rich
+                                                heritage, and an immortal folklore boasting of its majestic glory, every
+                                                building in Chittorgarh still reverberates with the history of its
+                                                sacrifice and heroism.The capital of the erstwhile kingdom of Mewar,
+                                                it is a land of forts, citadels, ruins, and evergreen stories.
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://static.toiimg.com/thumb/msid-86416954,width-748,height-499,resizemode=4,imgsize-170906/.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Sanchi</h3>
+                                            <p class="content">A symbol of the vast heritage present throughout the
+                                                culturally rich India, the Buddhist monuments of Sanchi are one of the
+                                                oldest stone structures in India. Designated a World Heritage site by
+                                                UNESCO, the Great Stupa was installed in the 3rd century BC by Emperor
+                                                Ashoka of the Mauryan dynasty. </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

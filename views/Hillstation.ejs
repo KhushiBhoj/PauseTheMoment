@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Stations</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <%- include('partials/navbar', {page:"places"}); -%>
+
+    <style>
+        .trending {
+            background: white;
+            margin-bottom: 25px;
+
+        }
+
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+            margin-bottom: 5px;
+        }
+
+        .warning:hover {
+            background: #ff9800;
+            color: white;
+        }
+
+        p {
+            color: gray;
+
+        }
+
+        .text {
+            padding-left: 1px;
+        }
+
+        img {
+            background-size: cover;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div style="background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    url('http://theghumakkads.in/wp-content/uploads/2018/08/Zoetropic_886869.gif');
+    
+    height: 400px;
+    background-size: cover;">
+        <div class="container" style="font-family: 'Water Brush', cursive;margin-bottom: 30px;
+                padding-top: 16%;
+                font-family: 'Water Brush', cursive;
+                font-size: 105px; color: white;">Hill Stations</div>
+    </div>
+    <div>
+        <div class="container" style="margin-top: 100px;">
+
+            <div class="container">
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://img.veenaworld.com/wp-content/uploads/2019/05/Leh-Ladakh-%E2%80%93-Land-of-the-High-Passes-1152x768.jpg?imwidth=1080">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Leh Ladakh </h3>
+                                            <p class="content">Counted among the highest hill stations in India, a trip
+                                                to Ladakh is also one of the most famous. From driving in the
+                                                world’s highest passes to soaking in the scenic beauty, there are a lot
+                                                of reasons why Leh Ladakh is counted among the most famous hill
+                                                stations.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://img.veenaworld.com/wp-content/uploads/2019/05/Nainital-Uttarakhand-%E2%80%93-The-Hill-Station-of-Lakes-1024x768.jpg?imwidth=1080">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Nainital</h3>
+                                            <p class="content">A small town in Uttarakhand’s Kumaon range, Nainital is
+                                                one of the most popular honeymoon destinations in India. It is also
+                                                known as the ‘Lake District of India’ and has something to offer for
+                                                everyone, from families and couples to solo travellers.
+
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://img.veenaworld.com/wp-content/uploads/2019/05/Manali-Himachal-Pradesh-%E2%80%93-Valley-of-the-Gods-1152x768.jpg?imwidth=1080">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Manali</h3>
+                                            <p class="content">The Kullu Valley offers mesmerizing views of scenic
+                                                snow-clad peaks and lush forests as well as a number of activities to
+                                                enjoy. On the list of hill stations in India that are most popular,
+                                                Manali has a touristy vibe to it right from the moment you enter.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://img.veenaworld.com/wp-content/uploads/2019/05/Gulmarg-Jammu-and-Kashmir-%E2%80%93-Popular-Hill-Station-and-Skiing-Destination-1152x768.jpg?imwidth=1080">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Gulmarg</h3>
+                                            <p class="content">Gulmarg is home to the highest gondola in the world,
+                                                which runs up to an astounding height. In
+                                                the summers, this hill station becomes a paradise for trekkers, and the
+                                                main tourist activities at Gulmarg include skiing and snowboarding.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://clubmahindra.gumlet.io/blog/media/section_images/srinagar-i-42a1779d38c92b7.jpg?w=376&dpr=2.6">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Srinagar</h3>
+                                            <p class="content">Get enchanted by the beautiful Nishat Bagh and Shalimar
+                                                Bagh, the botanical gardens during the popular Tulip festival and
+                                                Badamwari Garden to see the almond trees in full bloom. Make a visit to
+                                                the tranquil Shankaracharya Mandir, the beautiful Khanqah Shah-i-Hamadan
+                                                mosque and Pari Mahal. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://ridinghistory.com/wp-content/uploads/2020/10/khajjiar.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Khajjiar</h3>
+                                            <p class="content">Visit the Khajjiar Lake, fed by streams and situated
+                                                amidst the cedar forests. Other prominent places to visit are the Khajji
+                                                Nag Temple, the Khalatop Wildlife Sanctuary and the villages of Rota,
+                                                Ladi known for their apple orchards. This is a much famous hill station
+                                                in India which makes you explore its impeccable beauty. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/og-for-Places-To-Visit-Near-Mcleodganj.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Mcleodganj</h3>
+                                            <p class="content">The Tibetan town of McLeodganj is a great spot for a
+                                                holiday at any time of the year. Surrounded by snow-capped hills and
+                                                with a number of beautiful monasteries, it is the perfect place for a
+                                                serene trip. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.holidify.com/images/cmsuploads/compressed/sdfsdsdgsdgsdg_20181211083314.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Auli</h3>
+                                            <p class="content">Auli is a beautiful tourist spot which is famous for
+                                                skiing all across the country. This scenic place, well is known for its
+                                                oak edged slopes and verdant coniferous forests is amongst the best hill
+                                                stations in India.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://travelbuddiestalk.com/wp-content/uploads/2020/01/p-5.gif">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Tawang</h3>
+                                            <p class="content">Breathtaking valleys, misty rivers, and stunning
+                                                waterfalls give you the ultimate experience in the mystical Tawang.Visit
+                                                the snow-clad Sela Pass for a spectacular view and stop over at the
+                                                beautiful Paradise Lake on your way there. Make a trip to the Tawang
+                                                Monastery, the largest monastery in India.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://nomadicweekends.com/blog/wp-content/uploads/2019/02/Mumbai-to-Darjeeling.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Darjeeling</h3>
+                                            <p class="content">The hugely commercial but equally breathtaking Darjeeling
+                                                boasts of snowcapped peaks and endless tea gardens. Spend your days here
+                                                exploring the colonial-era architecture, visiting Buddhist monasteries
+                                                and of course sampling the fabulous tea, tea estate such as the
+                                                Happy Valley Tea Estate.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.theindianfeed.in/wp-content/uploads/2017/10/cherryblossom.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Shillong</h3>
+                                            <p class="content">With lush green fields, picturesque landscapes, and
+                                                sweet-smelling flowers, Shillong is all about natural beauty combined
+                                                with colonial hospitality, making it an amazing hill station in North
+                                                East India. Visit the Umaim lake created by the Umiam river and famous
+                                                for water sports.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://static.toiimg.com/img/79134216/Master.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Pelling</h3>
+                                            <p class="content">The snow-capped mountains, panoramic and rich history and
+                                                the view from the hilltops make Pelling a sought after travel
+                                                destination in the state of Sikkim.Sightseeing here combines mountains,
+                                                lakes,and waterfalls, out of which the Kanchenjunga Falls
+                                                is the most significant.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

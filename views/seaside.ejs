@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Side</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <%- include('partials/navbar', {page:"places"}); -%>
+    <style>
+        .trending {
+            background: white;
+            margin-bottom: 25px;
+
+        }
+
+        .warning {
+            border-color: #ff9800;
+            color: orange;
+            margin-bottom: 5px;
+        }
+
+        .warning:hover {
+            background: #ff9800;
+            color: white;
+        }
+
+        p {
+            color: gray;
+
+        }
+
+        .text {
+            padding-left: 1px;
+        }
+
+        img {
+            background-size: cover;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div style="background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    url('https://img.wattpad.com/5ce7bf30805deffb2c3d8f01d8f6aaa4f6129a3a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f57516163535f62643437366361513d3d2d3631313133313039322e313534666261356330613238373862353935363330353530363435372e676966');
+    
+    height: 400px;
+    background-size: cover;">
+        <div class="container" style="font-family: 'Water Brush', cursive;margin-bottom: 30px;
+                padding-top: 16%;
+                font-family: 'Water Brush', cursive;
+                font-size: 105px; color: white;">Sea Shore</div>
+    </div>
+    <div>
+        <div class="container" style="margin-top: 100px;">
+
+            <div class="container">
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://seoimgak.mmtcdn.com/blog/sites/default/files/images/goa-beach-holiday.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Goa</h3>
+                                            <p class="content">When in doubt, go Goa! One cannot really go wrong with
+                                                India’s party capital. A place where people can be seen sunbathing,
+                                                swimming, parasailing or relaxing in their hammocks sipping a cold beer
+                                                all year round,</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/03/02/Photos/travel--621x414.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Gokarna</h3>
+                                            <p class="content">Situated 190 kilometres south of
+                                                Goa, a change from Goa’s fast pace!Famous for the Mahabaleshwar temple
+                                                and its pristine beaches, in this tranquil town, you can enjoy a day
+                                                basking in the sun or laying in a hammock.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://indiatourism.world/wp-content/uploads/kerala-india-gods-own-country-kerala-tourism-best-places-to-visit-1110067826-1526629916366-1568x882.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Kerla</h3>
+                                            <p class="content">Kerala and its exotic beauty is an open secret. This
+                                                vibrant state draws tourists from over the world who readily succumb to
+                                                its magnificence. This time round, visit the lesser known treasures in
+                                                Kerala like Marari Beach in Alleppey district. A sleepy town brimming
+                                                with beauty on all four sides,</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://seoimgak.mmtcdn.com/blog/sites/default/files/images/havelock-beach-holiday.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Havelock</h3>
+                                            <p class="content">Sparkling white sand, turquoise waters, vibrant coral
+                                                reefs and a calmness that fills the air. Scuba diving, snorkelling,
+                                                trekking, elephant rides and a lot more - Havelock in Andaman promises a
+                                                pleasant and highly rejuvenating holiday where celebration comes from
+                                                being one with nature. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://suntourismpune.files.wordpress.com/2021/12/unstoppable-andaman-0.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Andaman</h3>
+                                            <p class="content">Lagoons of crystal clear water and scenic beaches topped
+                                                with a little bit of history make Andaman and Nicobar one of the most
+                                                perfect choices for an enjoyable, laid-back holiday where you can go on
+                                                long treks, laze around in the backwaters of the island, or if you're
+                                                feeling a little more adventurous, even go for a bit of deep-sea diving.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://static.toiimg.com/photo/msid-66971093,width-96,height-65.cms">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Kovalam</h3>
+                                            <p class="content">An village along the coastline of the Arabian
+                                                Sea, Kovalam is most famous for its three pristine beaches with shallow
+                                                waters and low tidal waves where one can go surfing, wooden and
+                                                motorboat riding.The beach town of Kovalam has three famous beaches:
+                                                Lighthouse beach, Samudra beach and Hawah beach, which together form its
+                                                majestic rocky crescent.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2020/01/GettyImages-860520176_352629352_606814961.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Gokarna</h3>
+                                            <p class="content">With its pristine beaches and breathtaking landscapes, it
+                                                is a Hindu pilgrimage town in Karnataka and a newly found hub for beach
+                                                lovers.</p>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img" src="https://miro.medium.com/max/1200/0*wWfIKxAcCGjtKCgE.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Lakshadweep</h3>
+                                            <p class="content">Literally meaning a 'hundred thousand islands',
+                                                Lakshadweep has few of the most beautiful and exotic islands and beaches
+                                                of India.</p>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.odishatourism.gov.in/content/dam/tourism/home/discover/attractions/beaches/puri/puri%20corosal2.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Puri</h3>
+                                            <p class="content">One of the four must-visit pilgrimage sites for Hindus
+                                                (Char-Dham), Puri is a beach city with its most famous attraction as the
+                                                Jagannath temple. The Best Time to visit Puri is July to March</p>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://assets.telegraphindia.com/telegraph/2021/Aug/1629919692_26nbldigha_4.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Digha</h3>
+                                            <p class="content">Beach town situated on the shores of Bay of Bengal, Digha
+                                                is a popular tourist destination known for its untouched beaches and
+                                                scenic views, especially among people in Bengal.</p>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://www.acroncandolimresortgoa.com/explore-goa/beaches-in-goa/palolem-beach/images/palolem-beach.jpg">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Palolem Beach</h3>
+                                            <p class="content">Palolem Beach, located in the South Goa is one of the
+                                                most beautiful beaches of the Union Territory has to offer. Mostly
+                                                unspoiled, the beach is often flocked with foreign tourists.</p>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="trending">
+                            <div style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="img"
+                                            src="https://i0.wp.com/itsgoa.com/wp-content/uploads/2018/04/colva-beach-goa-768x485-e1523259289213.jpg?fit=633%2C400&ssl=1">
+                                    </div>
+                                    <div class="col-md-5 text">
+                                        <div class="container">
+                                            <h3>Colva
+                                                beach</h3>
+                                            <p class="content">One of the most happening beaches in South Goa, Colva
+                                                beach is mainly renowned for its shopping and phenomenal nightlife. The
+                                                beach is full of shacks and eating joints.</p>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

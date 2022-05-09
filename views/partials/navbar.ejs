@@ -1,0 +1,83 @@
+<!---Navbar-->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark main-navbar
+bg m-navbar-light " id="main-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/">Pause The Moment: Your Travel Story</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav" aria-controls="p-nav"
+            aria-expanded="false" aria-label="toggle-navigation">
+            <span>Menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="my-nav">
+            <ul class="navbar-nav ml-auto">
+                <% if(page=="home" ){ %>
+                    <li class="nav-item active">
+                        <% } else {%>
+                    <li class="nav-item">
+                    <% } %>
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+
+                        <% if(page=="/#about_us" ){ %>
+                        <li class="nav-item active">
+                            <% } else {%>
+                        <li class="nav-item">
+                        <% } %>
+                            <a href="/#about_us" class="nav-link">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/#popular_places" class="nav-link">Popular Places</a>
+                        </li>
+
+                        <% if(page=="gallary" ){ %>
+                            <li class="nav-item active">
+                        <% } else {%>
+                            <li class="nav-item">
+                        <% } %>
+                                <a href="gallery" class="nav-link">Gallery</a>
+                            </li>
+
+                        <% if(page=="places" ){ %>
+                            <li class="nav-item active">
+                        <% } else {%>
+                            <li class="nav-item">
+                        <% } %>
+                                <a href="places" class="nav-link">Places</a>
+                            </li>
+
+                        <% if(page=="reasons" ){ %>
+                            <li class="nav-item active">
+                        <% } else {%>
+                            <li class="nav-item">
+                        <% } %>
+                                <a href="reasons" class="nav-link">Reasons</a>
+                            </li>
+
+                        <% if(page=="travel" ){ %>
+                            <li class="nav-item active">
+                        <% } else {%>
+                            <li class="nav-item">
+                        <% } %>
+                                <a href="/travel" class="nav-link">Travel</a>
+                            </li>
+
+                        <% if(page=="blog" ){ %>
+                            <li class="nav-item active">
+                        <% } else {%>
+                            <li class="nav-item">
+                        <% } %>
+                                <a href="blog" class="nav-link">Blog</a>
+                            </li>
+
+                            
+                        <% if(page=="contact" ){ %>
+                            <li class="nav-item active">
+                        <% } else {%>
+                            <li class="nav-item">
+                        <% } %>
+                                <a href="contact" class="nav-link">Contact Us</a>
+                            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
